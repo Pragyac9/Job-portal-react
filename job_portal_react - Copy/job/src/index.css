@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: linear-gradient(rgb(17, 24, 39), rgb(88, 28, 135), rgb(124, 58, 237));
+  }
+}
+
+.app {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .app {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .Navbar {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-style: italic;
+    margin-left: 2rem;
+    font-size: xx-large;
+  }
+  .Head {
+    margin-left: 1rem; /* Reset margin */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Head__h1 {
+    font-size: 2rem;
+  }
+  .Head__p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    font-size: x-large;
+  }
+  .SearchBar {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    place-items: center;
+  }
+  .SearchBar__Select {
+    width: 8rem;
+  }
+  .SearchBar__btn {
+    width: 15rem;
+    margin-left: 11rem;
+  }
+  .jobcard {
+    width: 99%;
+    margin-left: 0;
+  }
+  .jobcard__desc {
+    display: flex;
+    gap: 2rem;
+    
+  }
+  .jobcard__inner{
+    display: grid;
+    grid-template-columns: 8.5rem ;
+  }
+  .jobcard__skill{
+    display: grid;
+    grid-template-columns: 75px 75px;
+  }
+  .jobcard__btn{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
